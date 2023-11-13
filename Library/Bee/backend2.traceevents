@@ -1,0 +1,315 @@
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1699262385990292, "dur":20973, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262386011273, "dur":77, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262386011398, "dur":466, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262386012511, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1699262386013231, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1699262386013976, "dur":65, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1699262386014182, "dur":63, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1699262386014384, "dur":60, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":0, "ts":1699262386011884, "dur":3472, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262386015358, "dur":3464478, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262389479838, "dur":388, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262389480226, "dur":76, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262389480509, "dur":1965, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1699262386011974, "dur":3392, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699262386015369, "dur":5287, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1699262386022527, "dur":730, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":1, "ts":1699262386023265, "dur":114, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386023403, "dur":5213, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":1, "ts":1699262386028618, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win64\\Data\\ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1699262386028942, "dur":95, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386029038, "dur":116, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386029155, "dur":191, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386029347, "dur":327, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386029676, "dur":537, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386030215, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386030296, "dur":293, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386030590, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\terap\\Downloads\\\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1699262386030752, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player8ee68a58-inputdata.json" }}
+,{ "pid":12345, "tid":1, "ts":1699262386023264, "dur":7641, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386031594, "dur":198225, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386234040, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386234039, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386234156, "dur":2450, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/boot.config" }}
+,{ "pid":12345, "tid":1, "ts":1699262386236611, "dur":3243253, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699262386012133, "dur":3275, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699262386015414, "dur":1215, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699262386016630, "dur":4047, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1699262386020734, "dur":547, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\web.config" }}
+,{ "pid":12345, "tid":2, "ts":1699262386020686, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1699262386074538, "dur":2324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1699262386077043, "dur":10276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1699262386087457, "dur":6703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets6.assets" }}
+,{ "pid":12345, "tid":2, "ts":1699262386094353, "dur":33417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1699262386127878, "dur":3351952, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386012026, "dur":3347, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386015382, "dur":1081, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386016463, "dur":4197, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386020681, "dur":139, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386022408, "dur":3961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1699262386026373, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1699262386026558, "dur":1346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1699262386027951, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699262386028087, "dur":2180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":3, "ts":1699262386030322, "dur":121, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386030320, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386031571, "dur":2423, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386034375, "dur":5192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386039646, "dur":2259, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386041976, "dur":2707, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386044774, "dur":4124, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386048984, "dur":2666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386051743, "dur":3647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386055523, "dur":2161, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386057909, "dur":2758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386060775, "dur":2849, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386063717, "dur":3820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386067616, "dur":6501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386074269, "dur":5526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386090918, "dur":63, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386079890, "dur":11119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1699262386091110, "dur":19992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1699262386111194, "dur":157, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1699262386111354, "dur":4706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level6" }}
+,{ "pid":12345, "tid":3, "ts":1699262386116555, "dur":27059, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1699262386143699, "dur":3336162, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699262386012067, "dur":3319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699262386015388, "dur":966, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699262386016354, "dur":4357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1699262386020718, "dur":587, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699262386076453, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1699262386079031, "dur":10008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1699262386089136, "dur":8546, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets4.assets" }}
+,{ "pid":12345, "tid":4, "ts":1699262386097759, "dur":13352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level8.resS" }}
+,{ "pid":12345, "tid":4, "ts":1699262386111230, "dur":4642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level6.resS" }}
+,{ "pid":12345, "tid":4, "ts":1699262386116000, "dur":5677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level0" }}
+,{ "pid":12345, "tid":4, "ts":1699262386121736, "dur":3358113, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386012183, "dur":3234, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386015420, "dur":977, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386016398, "dur":4326, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386020755, "dur":407, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\web.config" }}
+,{ "pid":12345, "tid":5, "ts":1699262386020730, "dur":434, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1699262386061745, "dur":51, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386061896, "dur":1967, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1699262386064025, "dur":3523, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699262386067620, "dur":4927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699262386072634, "dur":3912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699262386076660, "dur":4793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1699262386081580, "dur":6720, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets7.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1699262386088394, "dur":5300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets5.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699262386093782, "dur":9338, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1699262386111211, "dur":337, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1699262386103439, "dur":8120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level7" }}
+,{ "pid":12345, "tid":5, "ts":1699262386111625, "dur":64454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level2.resS" }}
+,{ "pid":12345, "tid":5, "ts":1699262386176148, "dur":3303733, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699262386012225, "dur":3199, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699262386015427, "dur":1162, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699262386016589, "dur":4177, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1699262386020772, "dur":496, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699262386064458, "dur":1912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":6, "ts":1699262386066741, "dur":4035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699262386070875, "dur":7765, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699262386078747, "dur":10876, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1699262386089699, "dur":8550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets3.assets" }}
+,{ "pid":12345, "tid":6, "ts":1699262386098369, "dur":18341, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level8" }}
+,{ "pid":12345, "tid":6, "ts":1699262386116784, "dur":15715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":6, "ts":1699262386132611, "dur":3347273, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1699262386012263, "dur":3183, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1699262386015451, "dur":1221, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1699262386016673, "dur":3996, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1699262386020690, "dur":340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1699262386038376, "dur":2868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1699262386041376, "dur":2532, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386044001, "dur":2146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386046245, "dur":3097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386049412, "dur":5023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386057339, "dur":77, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1699262386054505, "dur":2926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386057542, "dur":3143, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386060774, "dur":3099, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386064023, "dur":3875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386067977, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386073195, "dur":6253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386079669, "dur":14245, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1699262386094564, "dur":1969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":7, "ts":1699262386096610, "dur":14719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/resources.assets" }}
+,{ "pid":12345, "tid":7, "ts":1699262386111375, "dur":4505, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level3.resS" }}
+,{ "pid":12345, "tid":7, "ts":1699262386115957, "dur":12522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level0.resS" }}
+,{ "pid":12345, "tid":7, "ts":1699262386129089, "dur":3350750, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1699262386012319, "dur":3135, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1699262386015457, "dur":1207, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1699262386016664, "dur":4036, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1699262386020708, "dur":582, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1699262386075419, "dur":2515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1699262386078022, "dur":12292, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1699262386090596, "dur":8670, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1699262386099360, "dur":11951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level7.resS" }}
+,{ "pid":12345, "tid":8, "ts":1699262386119398, "dur":1946, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1699262386111493, "dur":9868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level3" }}
+,{ "pid":12345, "tid":8, "ts":1699262386121531, "dur":9163, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":8, "ts":1699262386130860, "dur":3348985, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386012378, "dur":3083, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386015464, "dur":1418, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386016883, "dur":3866, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386020780, "dur":525, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.0\\machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1699262386020755, "dur":553, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1699262386076891, "dur":2087, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1699262386079134, "dur":8958, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1699262386088187, "dur":4002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets5.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1699262386111062, "dur":55, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386092264, "dur":18864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1699262386111195, "dur":261, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386119564, "dur":2110, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1699262386111460, "dur":10231, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level5.resS" }}
+,{ "pid":12345, "tid":9, "ts":1699262386121796, "dur":3358038, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1699262386012449, "dur":3022, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1699262386015473, "dur":1107, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1699262386016580, "dur":4108, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1699262386020776, "dur":437, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\4.5\\machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1699262386020691, "dur":524, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1699262386062429, "dur":2340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":10, "ts":1699262386064961, "dur":4073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1699262386069121, "dur":3911, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1699262386073195, "dur":4809, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1699262386078066, "dur":11265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1699262386089926, "dur":533, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1699262386090466, "dur":3389192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets2.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1699262386012494, "dur":2982, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1699262386015477, "dur":5206, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1699262386020686, "dur":369, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1699262386039423, "dur":1832, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1699262386041386, "dur":2515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386044001, "dur":2127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386046228, "dur":2895, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386049199, "dur":4302, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386053569, "dur":3060, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386056750, "dur":2476, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386062417, "dur":76, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1699262386059297, "dur":3258, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386062642, "dur":4097, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386066847, "dur":4051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386070960, "dur":4725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386075789, "dur":5847, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1699262386081685, "dur":6968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets7.assets" }}
+,{ "pid":12345, "tid":11, "ts":1699262386088774, "dur":5614, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets4.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1699262386094448, "dur":17201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1699262386111820, "dur":27324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level2" }}
+,{ "pid":12345, "tid":11, "ts":1699262386139232, "dur":3340638, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1699262386012552, "dur":2931, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1699262386015484, "dur":5189, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1699262386020675, "dur":308, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":12, "ts":1699262386029885, "dur":2626, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":12, "ts":1699262386032586, "dur":62, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Temp\\StagingArea\\WindowsPlayer.exe" }}
+,{ "pid":12345, "tid":12, "ts":1699262386032585, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/.exe" }}
+,{ "pid":12345, "tid":12, "ts":1699262386032662, "dur":1996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/.exe" }}
+,{ "pid":12345, "tid":12, "ts":1699262386034784, "dur":3924, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386038826, "dur":4539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386043463, "dur":1946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386045489, "dur":3442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386049035, "dur":4496, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386053595, "dur":3018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386056708, "dur":2554, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386059330, "dur":2964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386062400, "dur":59, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1699262386062468, "dur":2726, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386065283, "dur":3755, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386069109, "dur":3946, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386073198, "dur":4343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386077653, "dur":8186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1699262386085930, "dur":8201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets6.assets.resS" }}
+,{ "pid":12345, "tid":12, "ts":1699262386094201, "dur":16906, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":12, "ts":1699262386124278, "dur":850, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1699262386111833, "dur":13332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level1.resS" }}
+,{ "pid":12345, "tid":12, "ts":1699262386125308, "dur":3354547, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1699262386012598, "dur":2891, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1699262386015490, "dur":5172, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1699262386020727, "dur":247, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1699262386020671, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1699262386029165, "dur":3517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":13, "ts":1699262386032745, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":13, "ts":1699262386033270, "dur":5874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":13, "ts":1699262386039248, "dur":2587, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386041977, "dur":2815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386044860, "dur":2757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386047728, "dur":2045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386049847, "dur":4566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386054499, "dur":2862, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386057452, "dur":2947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386060477, "dur":2760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386063332, "dur":3803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386067205, "dur":4591, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386071887, "dur":2969, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386074919, "dur":5255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386080248, "dur":11471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1699262386091808, "dur":19387, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":13, "ts":1699262386118863, "dur":2454, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1699262386111311, "dur":10024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level5" }}
+,{ "pid":12345, "tid":13, "ts":1699262386121494, "dur":3358364, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1699262386012649, "dur":2845, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1699262386015494, "dur":5171, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1699262386020735, "dur":239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\mconfig\\config.xml" }}
+,{ "pid":12345, "tid":14, "ts":1699262386020673, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":14, "ts":1699262386023756, "dur":1214, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":14, "ts":1699262386025018, "dur":123, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\web.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386025016, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386025595, "dur":1511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386027162, "dur":109, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\etc\\mono\\2.0\\machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386027160, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386027286, "dur":1263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1699262386028606, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1699262386029519, "dur":1966, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":14, "ts":1699262386031542, "dur":210, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\MonoBleedingEdge\\EmbedRuntime\\mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386031539, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386031830, "dur":9968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386041974, "dur":2442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386044504, "dur":2672, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386047275, "dur":2286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386049640, "dur":81, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1699262386049729, "dur":4776, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386054584, "dur":2938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386057657, "dur":2334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386060053, "dur":2843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386062970, "dur":3782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386066851, "dur":3492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386070405, "dur":4340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386074869, "dur":6588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1699262386081526, "dur":7645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets8.assets" }}
+,{ "pid":12345, "tid":14, "ts":1699262386118567, "dur":2609, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1699262386089246, "dur":31984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets3.assets.resS" }}
+,{ "pid":12345, "tid":14, "ts":1699262386124378, "dur":3355489, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386012720, "dur":2785, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386015506, "dur":5311, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386020819, "dur":424, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1699262386063682, "dur":2389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1699262386070161, "dur":60, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386066155, "dur":4081, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1699262386070377, "dur":5354, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1699262386075806, "dur":5165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1699262386090067, "dur":110, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386081040, "dur":9154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets8.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1699262386090330, "dur":20985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":15, "ts":1699262386129169, "dur":56, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1699262386111371, "dur":17910, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level4" }}
+,{ "pid":12345, "tid":15, "ts":1699262386133751, "dur":3346091, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1699262386012773, "dur":2740, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1699262386015513, "dur":5225, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1699262386020743, "dur":347, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1699262386053398, "dur":79, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1699262386051765, "dur":1775, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":16, "ts":1699262386053631, "dur":2972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386056696, "dur":1885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386061781, "dur":94, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1699262386058670, "dur":3222, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386061999, "dur":3840, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386065932, "dur":4005, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386070107, "dur":4654, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386074837, "dur":5331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386080235, "dur":254, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.9f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\win64_player_nondevelopment_mono\\UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386080234, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/terap/Downloads/game_data/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386080508, "dur":30750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1699262386111367, "dur":3964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level4.resS" }}
+,{ "pid":12345, "tid":16, "ts":1699262386115412, "dur":9596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/terap/Downloads/game_data/_Data/level1" }}
+,{ "pid":12345, "tid":16, "ts":1699262386125134, "dur":3354741, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1699262389485263, "dur":1424, "ph":"X", "name": "ProfilerWriteOutput" }
+,

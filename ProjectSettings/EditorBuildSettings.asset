@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/tolet/Scenes/title.unity
+    guid: c51fd53b76910fe428ce33840c255213
+  - enabled: 1
+    path: Assets/tolet/Scenes/cut.unity
+    guid: fd41e95cdae59bf42ae6ef4ce6ae6c7b
+  - enabled: 1
+    path: Assets/tolet/Scenes/Main.unity
+    guid: ebeb67da31c36c847ae3afb6212b2fee
+  - enabled: 1
+    path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B81/\u30B9\u30C6\u30FC\u30B81.unity"
+    guid: 735e5973a2db5f74ba8ce6cb62021754
+  - enabled: 1
+    path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B82/\u30B9\u30C6\u30FC\u30B82.unity"
+    guid: 0c9cebf50e076b04487c18e863aebda6
+  - enabled: 1
+    path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B83/\u30B9\u30C6\u30FC\u30B83.unity"
+    guid: 22b516d09939c6248bf5d2deda87860f
+  - enabled: 1
+    path: "Assets/Scenes/\u30B9\u30C6\u30FC\u30B84/\u30B9\u30C6\u30FC\u30B84.unity"
+    guid: 5e61e246db38e0b499cab6b2bdadd879
+  - enabled: 1
+    path: Assets/tolet/Scenes/clear.unity
+    guid: 1dddcb2492fb85849b3ffcad63f86566
+  - enabled: 1
+    path: Assets/tolet/Scenes/gameover.unity
+    guid: 9b6c785859e733149b8a802fc54587cb
+  m_configObjects: {}
