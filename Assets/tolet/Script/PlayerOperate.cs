@@ -263,11 +263,12 @@ public class PlayerOperate : MonoBehaviour
             //イライラ棒成功
             if (sticController.f == true)
             {
+                AudioManager.GetInstance().PlaySound(4);
                 meter_sum = meter_sum / 3;
                 meter_add = meter_sum;
                 Geri_Slider.value = meter_sum;
             }else{// 失敗
-
+                AudioManager.GetInstance().PlaySound(5);
             }
 
             if ( Volt == 1){
