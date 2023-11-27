@@ -9,14 +9,14 @@ public class sticController : MonoBehaviour
     float SlideForce = 10f;
     float maxSpeed=10f;
 
-    public static int test = 0;
+    public static bool Stic_status = false;
     public static bool f = false;
 
     void Start()
     {
         this.rigid = GetComponent<Rigidbody>();
         Application.targetFrameRate=30;
-        test = 0;
+        Stic_status = false;
     }
 
     void Update()
@@ -35,7 +35,7 @@ public class sticController : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(UnityEngine.Collision collision)
     {
         if (collision.gameObject.tag == "Goal")
         {
@@ -45,6 +45,6 @@ public class sticController : MonoBehaviour
             Debug.Log("失敗");
             f = false;
         }
-        test = 1;
+        Stic_status = true;
     }
 }

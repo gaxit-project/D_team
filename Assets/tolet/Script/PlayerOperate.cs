@@ -42,7 +42,7 @@ public class PlayerOperate : MonoBehaviour
 	private GameObject pauseUIInstance;
 
     //ポーズ中か判定
-    int p = 0;
+    public static bool pause_status = false;
 
     public static int pt = 0;
 
@@ -54,16 +54,14 @@ public class PlayerOperate : MonoBehaviour
     //イライラ棒
     public static int Volt = 1;
     public static int Volt_status = 0;
+    public static bool Volt_sta;
 
     // 下痢メーター
     [SerializeField] Slider Geri_Slider;
 
     public float T = 1.0f;
     float f = 1.0f;
-
-    float f2 ;
     float sin = 0.0f;
-    float sin2 = 0.0f;
 
     int pn;
 
@@ -73,7 +71,12 @@ public class PlayerOperate : MonoBehaviour
     int meter_sum;
     int meter_add = 1;
 
-    // 調子画像
+    // テンションメーター
+    [SerializeField] Slider Tension_Slider;
+    public float temsion_timer;
+    public float span = 3.0f;
+
+    // テンション画像
     [SerializeField] Sprite imageGood;
     [SerializeField]  Sprite imageBut;
     [SerializeField]  Image myPhoto;
@@ -87,17 +90,26 @@ public class PlayerOperate : MonoBehaviour
         //BGM
         rd = Random.Range(1, 3);
         AudioManager.GetInstance().PlayBGM(rd);
+
+        //BGM 音量
         Geri_Slider.maxValue = geriMAX;
         _target.enabled = false;
-        
+
+        // テンションメーターの周期
+        temsion_timer = 0.0f;
         f = 1.0f / T;
-        Volt = 1;
+
+        // テンションの画像
         myPhoto = GameObject.Find("/Canvas/tyousi").GetComponent<Image>();
         myPhoto.enabled = false;
+
+        //イライラ棒の状態
+        Volt = 1;
+        Volt_sta = false;
     }
     void Update()
     {
-        if (p == 0){//ポーズ中か
+        if (pause_status == false){//ポーズ中か
             //死亡した後動けないように
             if (death== false)
             {
@@ -222,100 +234,100 @@ public class PlayerOperate : MonoBehaviour
         {
             if (pauseUIInstance == null) 
             {
-                p = 1;
+                pause_status = true;
 				pauseUIInstance = GameObject.Instantiate (pauseUIPrefab) as GameObject;
 				Time.timeScale = 0f;
 			} else {
-                p = 0;
+                pause_status = false;
 				Destroy (pauseUIInstance);
 				Time.timeScale = 1f;
 			}
         }
-        /*if (pt == 1)
-        {
-            p = 0;
-			Destroy (pauseUIInstance);
-			Time.timeScale = 1f;
-        }*/
     }
 
     //電撃イライラ棒
     void Volt_Tackle()
     {
-        if (Input.GetAxis("JoyVertical") == 0)
+        if (Volt_sta == false)
         {
-            if (Input.GetButtonDown("JoyRight"))
+            if (Input.GetAxis("JoyVertical") == 0)
             {
-                Volt_status = 1;
-                if ( Volt == 1){
-                    SceneManager.instance.Game1();
-                }else if( Volt == 2){
-                    SceneManager.instance.Game2();
-                }else if( Volt == 3){
-                    SceneManager.instance.Game3();
-                }else if( Volt == 4){
-                    SceneManager.instance.Game4();
+                if (Input.GetButtonDown("JoyRight"))
+                {
+                    Volt_status = 1;
+                    Volt_sta = true;
+                    if ( Volt == 1){
+                        SceneManager.instance.Game3();
+                    }else if( Volt == 2){
+                        SceneManager.instance.Game1();
+                    }else if( Volt == 3){
+                        SceneManager.instance.Game2();
+                    }else if( Volt >= 4){
+                        SceneManager.instance.Game4();
+                    }
                 }
             }
-        }
-        if (sticController.test == 1)
-        {
-            //イライラ棒成功
-            if (sticController.f == true)
-            {
-                AudioManager.GetInstance().PlaySound(4);
-                meter_sum = meter_sum / 3;
-                meter_add = meter_sum;
-                Geri_Slider.value = meter_sum;
-            }else{// 失敗
-                AudioManager.GetInstance().PlaySound(5);
-            }
 
-            if ( Volt == 1){
-                SceneManager.instance.Game1End();
-            }else if( Volt == 2){
-                SceneManager.instance.Game2End();
-            }else if( Volt == 3){
-                SceneManager.instance.Game3End();
-            }else if( Volt == 4){
-                SceneManager.instance.Game4End();
+            if (sticController.Stic_status == true)// イライラ棒終了
+            {
+                //イライラ棒成功
+                if (sticController.f == true)
+                {
+                    Debug.Log("イライラ棒成功");
+                    AudioManager.GetInstance().PlaySound(4);
+                    meter_sum = meter_sum / 3;
+                    meter_add = meter_sum;
+                    Geri_Slider.value = meter_sum;
+                }else{// 失敗
+                    Debug.Log("イライラ棒失敗");
+                    AudioManager.GetInstance().PlaySound(5);
+                }
+
+                if ( Volt == 1){
+                    SceneManager.instance.Game3End();
+                }else if( Volt == 2){
+                    SceneManager.instance.Game1End();
+                }else if( Volt == 3){
+                    SceneManager.instance.Game2End();
+                }else if( Volt >= 4){
+                    SceneManager.instance.Game4End();
+                }
+                Volt_status = 0;
+                Volt_sta = false;
+                Volt++;
+                sticController.Stic_status = false;
             }
-            Volt_status = 0;
-            Volt++;
-            sticController.test = 0;
         }
     }
     
     //脱糞
     void defecating ()
     {
-        int rnd = Random.Range(5, 11);// ※ 5～10の範囲でランダムな整数値が返る
-        f2 = 1.0f / rnd;
+        // テンションメーター
+        temsion_timer += Time.deltaTime;
+        if (temsion_timer > span)
+        {
+            int tension_rnd = Random.Range(1, 11);// 1～10の範囲でランダムな整数値が返る
+            if (tension_rnd <= 5){
+                myPhoto.enabled = true;
+                myPhoto.sprite = imageGood;
+                pn = tension_rnd;
+            }else{
+                myPhoto.enabled = true;
+                myPhoto.sprite = imageBut;
+                pn = tension_rnd;
+            }
+            Tension_Slider.value = tension_rnd;
+            temsion_timer = 0.0f;
+        }
+
+        // 下痢メーター
         sin = Mathf.Sin(2 * Mathf.PI * f * Time.time);
-        sin2 = Mathf.Sin(2 * Mathf.PI * f2 * Time.time);
-        //Debug.Log(sin);
-
-        if (sin2 > 0.5) {
-            myPhoto.enabled = true;
-            myPhoto.sprite = imageGood;
-            pn = 1;
-        } else if (sin2 > -0.5) {
-            myPhoto.enabled = true;
-            myPhoto.sprite = imageGood;
-            pn = 2;
-        }
-        else { 
-            myPhoto.enabled = true;
-            myPhoto.sprite = imageBut;
-            pn = 4;
-        }
-
         if (death == false)
         {
-            if ( Volt_status == 0)
-            {// イライラ棒中以外
-                //動いているとき加算
-                if (Input.GetAxis("JoyVertical") != 0)
+            if ( Volt_status == 0)// イライラ棒中以外
+            {
+                if (Input.GetAxis("JoyVertical") != 0)//動いているとき加算
                 {
                     if (sin >= 0.99)
                     {
@@ -333,7 +345,6 @@ public class PlayerOperate : MonoBehaviour
                     }
                 }
             }
-            //text -> int
             meter_sum = meter_add;  
             Geri_Slider.value = meter_sum;
 
@@ -389,12 +400,12 @@ public class PlayerOperate : MonoBehaviour
     {
         if (pinch == true)
         {
-            Debug.Log("ピンチBGM1");
+            //Debug.Log("ピンチBGM1");
             if (pinchBGM == true)
             {
                 //ピンチSE
                 AudioManager.GetInstance().PlayBGM(3);
-                Debug.Log("ピンチBGM2");
+                //Debug.Log("ピンチBGM2");
             }
             pinchBGM = false;
         }
@@ -405,12 +416,12 @@ public class PlayerOperate : MonoBehaviour
     {
         if (pinch == false)
         {
-            Debug.Log("ノーマルBGM1");
+            //Debug.Log("ノーマルBGM1");
             if (pinchBGM == false)
             {
                 //ピンチSE
                 AudioManager.GetInstance().PlayBGM(rd);
-                Debug.Log("ノーマルBGM2");
+                //Debug.Log("ノーマルBGM2");
             }
             pinchBGM = true;
         }

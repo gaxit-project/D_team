@@ -111,6 +111,10 @@ public class Presenter : MonoBehaviour
         }else if (2 == sele % sele_index){
             if (Input.GetButtonDown("JoyDown"))
             {
+                Time.timeScale = 1f;
+                PlayerOperate.pause_status = false;
+                PlayerOperate.Volt_status = 0;
+                PlayerOperate.Volt_sta = false;
                 OnButtontitle();
             }
         }else{
