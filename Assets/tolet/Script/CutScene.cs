@@ -5,17 +5,18 @@ using System.Threading;
 
 public class CutScene : MonoBehaviour
 {
+    public float Cut_timer;
     private void Start()
     {
-        // コルーチンの起動
-        StartCoroutine(DelayCoroutine());
+        Cut_timer = 0.0f;
     }
-
-    // コルーチン本体
-    private IEnumerator DelayCoroutine()
+    void Update()
     {
-        // 3秒間待つ
-        yield return new WaitForSeconds(3);
-        SceneManager.instance.GamePlay();
+        Cut_timer += Time.deltaTime;
+        if (Cut_timer > 3)
+        {
+            Cut_timer = 0.0f;
+            SceneManager.instance.GamePlay();
+        }
     }
 }
