@@ -17,8 +17,8 @@ public class train1 : MonoBehaviour
         Vector3 pos = myTransform.position;
         if (state == 1) // 'outward'
         {
-            transform.position += new Vector3(0, 0, 10) * Time.deltaTime;
-            if (pos.z >= 305)
+            transform.position += new Vector3(0, 0, 5) * Time.deltaTime;
+            if (pos.z >= 308)
             {
                 state = 2; // 'ostop'
             }
@@ -37,8 +37,8 @@ public class train1 : MonoBehaviour
 
         if (state == 3) // 're'
         {
-            transform.position += new Vector3(0, 0, -10) * Time.deltaTime;
-            if (pos.z <= 213.5)
+            transform.position += new Vector3(0, 0, -5) * Time.deltaTime;
+            if (pos.z <= 229)
             {
                 state = 4; // 'restop'
             }
