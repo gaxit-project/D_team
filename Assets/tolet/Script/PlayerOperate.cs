@@ -7,6 +7,7 @@ public class PlayerOperate : MonoBehaviour
     //コントローラの初期設定
     public float speed = 2.5f;
     public float Dash_speed = 10.0f;
+    public float Walk_speed = 1.15f;
     public float gravity = 20.0f;
     public float protateSpeed = 1.5f;
     public float Dash_protateSpeed = 6.0f;
@@ -43,9 +44,13 @@ public class PlayerOperate : MonoBehaviour
     public Slider Geri_Slider;
     public float T = 1.0f;
     float f = 1.0f;
-    float sin = 0.0f;
     int pn;
     //int geri = 0;
+
+    //下痢タイマー
+    public float geri_timer;
+    //下痢余命
+    public float life_timer;
     public int geriMAX = 100;
     //テキストの数値化
     public static int meter_sum;
@@ -63,21 +68,35 @@ public class PlayerOperate : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 20;
+
         //BGM
         rd = Random.Range(1, 3);
         AudioManager.GetInstance().PlayBGM(rd);
+
         //BGM 音量
         Geri_Slider.maxValue = geriMAX;
         _target.enabled = false;
+
         // テンションメーターの周期
         temsion_timer = 0.0f;
+
+        //時間制御
+        geri_timer = 0.0f;
+        life_timer = 0.0f;
+
         f = 1.0f / T;
+
         // テンションの画像
         myPhoto = GameObject.Find("/Canvas/tyousi").GetComponent<Image>();
         myPhoto.enabled = false;
+
         //イライラ棒の状態
         Volt = 1;
         Volt_sta = false;
+
+        //下痢の初期化
+        meter_add = 0;
+        meter_sum = 0;
     }
     void Update()
     {
@@ -108,7 +127,6 @@ public class PlayerOperate : MonoBehaviour
         {
             //   ]
             transform.Rotate(0, -Input.GetAxis("JoyHorizontal") * Dash_protateSpeed, 0);
-            Debug.Log("ダッシュボタン押されてる");
             //走りモーション(ゲージたまるとモーション変化)
             if (Input.GetAxis("JoyVertical") != 0 )
             {
@@ -150,7 +168,7 @@ public class PlayerOperate : MonoBehaviour
             //
             if (controller.isGrounded)
             {
-                moveDirection = new Vector3(0, 0, Input.GetAxis("JoyVertical"));
+                moveDirection = new Vector3(0, 0, Input.GetAxis("JoyVertical") * Walk_speed);
                 moveDirection = this.gameObject.transform.TransformDirection(moveDirection);
                 moveDirection *= speed;
             }
@@ -269,7 +287,7 @@ public class PlayerOperate : MonoBehaviour
     {
         // テンションメーター
         temsion_timer += Time.deltaTime;
-        if (temsion_timer > span)
+        if (temsion_timer > span)// 3秒ごとに変化
         {
             int tension_rnd = Random.Range(1, 11);// 1～10の範囲でランダムな整数値が返る
             if (tension_rnd <= 5){
@@ -284,32 +302,39 @@ public class PlayerOperate : MonoBehaviour
             Tension_Slider.value = tension_rnd;
             temsion_timer = 0.0f;
         }
+
         // 下痢メーター
-        sin = Mathf.Sin(2 * Mathf.PI * f * Time.time);
+        geri_timer += Time.deltaTime;
+        life_timer += Time.deltaTime;
         if (death == false)
         {
             if ( Volt_status == 0)// イライラ棒中以外
             {
+                if (life_timer > span)//3秒ごとに腹が勝手に悪くなる
+                {
+                    meter_add += 2;
+                    meter_sum = meter_add;
+                    Geri_Slider.value = meter_sum;
+                    life_timer = 0.0f;
+                }
+
                 if (Input.GetAxis("JoyVertical") != 0)//動いているとき加算
                 {
-                    if (sin >= 0.99)
+                    if (geri_timer > 1)
                     {
                         if (Input.GetButton("JoyDown") || Input.GetButton("JoyA"))
                         {
                             meter_add += 3 * pn;
                         }else{
-                            meter_add += 1 * pn;
+                            meter_add += 1 * ((pn / 3) * 2);
                         }
-                    }
-                }else{
-                    if (sin >= 0.9999)
-                    {
-                        meter_add += 1;
+                        geri_timer = 0.0f;
                     }
                 }
             }
             meter_sum = meter_add;
             Geri_Slider.value = meter_sum;
+
             //ピンチ判定
             if (meter_sum >= geriMAX*0.8)
             {

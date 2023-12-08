@@ -9,6 +9,7 @@ public class CutScene : MonoBehaviour
     private void Start()
     {
         Cut_timer = 0.0f;
+        AudioManager.GetInstance().PlaySound(6);
     }
     void Update()
     {
