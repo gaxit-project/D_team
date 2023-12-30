@@ -10,26 +10,41 @@ public class sticController : MonoBehaviour
     public static bool f = false;
     int sum ;
     int add ;
+    [SerializeField] Fade fade;
+    bool con = false;
+    
     void Start()
     {
+        con = false;
         this.rigid = GetComponent<Rigidbody>();
         Application.targetFrameRate=30;
         Stic_status = false;
         sum = PlayerOperate.meter_sum;
         add = PlayerOperate.meter_add;
+        fade.FadeOut(1f, () => con = true);
+        /*if(con == true)
+        {
+            Fade.startFade = false;
+        }*/
     }
     void Update()
     {
-        float speedx=Mathf.Abs(this.rigid.velocity.x);
-        float speedy=Mathf.Abs(this.rigid.velocity.y);
-        //上下移動
-        if(speedy<this.maxSpeed){
-            this.rigid.AddForce(transform.forward * Input.GetAxis("JoyVertical") * this.SlideForce*-1);
+        if(con == true)
+        {
+            float speedx=Mathf.Abs(this.rigid.velocity.x);
+            float speedy=Mathf.Abs(this.rigid.velocity.y);
+            //上下移動
+            if(speedy<this.maxSpeed)
+            {
+                this.rigid.AddForce(transform.forward * Input.GetAxis("JoyVertical") * this.SlideForce*-1);
+            }
+            //左右移動
+            if(speedx<this.maxSpeed)
+            {
+                this.rigid.AddForce(transform.right * Input.GetAxis("JoyHorizontal") * this.SlideForce*-1);
+            }
         }
-        //左右移動
-        if(speedx<this.maxSpeed){
-            this.rigid.AddForce(transform.right * Input.GetAxis("JoyHorizontal") * this.SlideForce*-1);
-        }
+        
     }
     void OnCollisionEnter(UnityEngine.Collision collision)
     {

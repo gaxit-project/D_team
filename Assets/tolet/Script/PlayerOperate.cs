@@ -51,7 +51,7 @@ public class PlayerOperate : MonoBehaviour
     public float geri_timer;
     //下痢余命
     public float life_timer;
-    public int geriMAX = 100;
+    public int geriMAX = 1000;
     //テキストの数値化
     public static int meter_sum;
     public static int meter_add = 1;
@@ -65,6 +65,8 @@ public class PlayerOperate : MonoBehaviour
     [SerializeField]  Image myPhoto;
     //悲鳴
     bool isCalledOnce = false;
+    // フェード
+    [SerializeField] Fade fade;
     void Start()
     {
         Application.targetFrameRate = 20;
@@ -97,6 +99,7 @@ public class PlayerOperate : MonoBehaviour
         //下痢の初期化
         meter_add = 0;
         meter_sum = 0;
+        Geri_Slider.value = meter_sum;
     }
     void Update()
     {
@@ -236,14 +239,16 @@ public class PlayerOperate : MonoBehaviour
                 {
                     Volt_status = 1;
                     Volt_sta = true;
+                    Debug.Log("Volt: " + Volt);
+                    Debug.Log("Is Stic_status true? " + sticController.Stic_status);
                     if ( Volt == 1){
-                        SceneManager.instance.Game3();
+                        fade.FadeIn(1f, () => SceneManager.instance.Game3());
                     }else if( Volt == 2){
-                        SceneManager.instance.Game1();
+                        fade.FadeIn(1f, () => SceneManager.instance.Game1());
                     }else if( Volt == 3){
-                        SceneManager.instance.Game2();
+                        fade.FadeIn(1f, () => SceneManager.instance.Game2());
                     }else if( Volt >= 4){
-                        SceneManager.instance.Game4();
+                        fade.FadeIn(1f, () => SceneManager.instance.Game4());
                     }
                 }
             }

@@ -115,6 +115,8 @@ public class Presenter : MonoBehaviour
                 PlayerOperate.pause_status = false;
                 PlayerOperate.Volt_status = 0;
                 PlayerOperate.Volt_sta = false;
+                PlayerOperate.meter_add = 0;
+                PlayerOperate.meter_sum = 0;
                 OnButtontitle();
             }
         }else{

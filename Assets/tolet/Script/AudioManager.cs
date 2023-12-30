@@ -12,10 +12,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource audioSorceBGM;
     [SerializeField] AudioSource audioSorceSE;
 
-    void Start ()
-    {
-        //AudioManager.GetInstance().PlaySound(0);
-    }
     public float BGMVolume //BGMボリューム
     {
         get { return audioSorceBGM.volume; }

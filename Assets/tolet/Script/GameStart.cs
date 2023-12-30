@@ -8,6 +8,7 @@ public class GameStart : MonoBehaviour
 
     //private bool _bStart;
     //private Fade _fade;
+    [SerializeField] Fade fade;
     void Start()
     {
         /*_bStart = false;
@@ -22,17 +23,9 @@ public class GameStart : MonoBehaviour
         if (Input.GetKeyDown ( KeyCode.JoystickButton0 ) || Input.GetKeyDown ( KeyCode.JoystickButton1 ) || Input.GetKeyDown ( KeyCode.JoystickButton2 ) || Input.GetKeyDown ( KeyCode.JoystickButton3 )) 
         {
             AudioManager.GetInstance().StopBGM();
-            SceneManager.instance.Cut();
+            fade.FadeIn(1f, () => SceneManager.instance.Cut());
+            //SceneManager.instance.Cut();
 		}
     }
 
-    /*private void _TitleStart ()
-    {
-        _bStart = true;
-    }
-
-    private void ChangeScene ()
-    {
-        
-    }*/
 }
